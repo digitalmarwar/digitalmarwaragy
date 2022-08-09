@@ -5,12 +5,12 @@
 <!-- meta tags -->
 <meta charset="utf-8">
 <meta name="keywords" content="bootstrap 5, premium, multipurpose, sass, scss, saas, rtl">
-<meta name="description" content="Bootstrap 5 Landing Page Template">
-<meta name="author" content="www.themeht.com">
+<meta name="description" content="Digital Marwar - Creative Agency">
+<meta name="author" content="MOX RATHORE WEB SOLUTIONS">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Title -->
-<title>Bootsland - Creative Bootstrap 5 Landing Page</title>
+<title>Digital Marwar - Creative Agency</title>
 
 <!-- Favicon Icon -->
 <link rel="shortcut icon" href="assets\images\favicon.ico">
@@ -81,6 +81,22 @@
          <div class="col-lg-6 col-md-10 mx-auto">
           <h6>You’re either misspelling the URL
 or requesting a page that's no longer here.</h6>
+           <span id="timer"></span>
+<script type="text/javascript">
+var count = 4;
+var redirect = "https://www.google.com/search?q=Mox+Rathore&rlz=1C1CHBF_enIN919IN919&ei=LT6TYr61JIeSseMP7LaYmAI&ved=0ahUKEwj-_4z8s4T4AhUHSWwGHWwbBiMQ4dUDCA4&uact=5&oq=Mox+Rathore&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEBMyBggAEB4QEzoHCAAQsAMQEzoJCAAQHhCwAxATSgQIQRgBSgQIRhgAUOEXWNA5YOlEaAJwAHgAgAGIAYgB8ASSAQMwLjWYAQCgAQHIAQLAAQE&sclient=gws-wiz";
+function countDown(){
+var timer = document.getElementById("timer");
+if(count > 0){
+count--;
+timer.innerHTML = "This page will redirect in "+count+" seconds.";
+setTimeout("countDown()", 1000);
+}else{
+window.location.href = redirect;
+}
+}
+countDown();
+</script>
           <a class="btn btn-primary" href="index.html">Back To Home Page</a>
         </div>
         </div>
